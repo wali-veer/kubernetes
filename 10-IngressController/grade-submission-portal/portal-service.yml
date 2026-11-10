@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: portal-service
+  namespace: grade-submission
+spec:
+  type: ClusterIP
+  selector:
+    app.kubernetes.io/instance: portal-deployment
+  ports:
+  - port: 5001
+    targetPort: 5001
