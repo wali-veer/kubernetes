@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: apiconfig
+  namespace: grade-submission
+data:
+  MONGODB_HOST: m-service
+  MONGODB_PORT: "27017"
+
